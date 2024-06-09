@@ -20,6 +20,7 @@ use std::net::{Ipv4Addr, Ipv6Addr};
         target_os = "ios",
         target_os = "macos",
         target_os = "tvos",
+        target_os = "visionos",
         target_os = "watchos",
     )
 ))]
@@ -34,6 +35,7 @@ use std::num::NonZeroU32;
         target_os = "linux",
         target_os = "macos",
         target_os = "tvos",
+        target_os = "visionos",
         target_os = "watchos",
     )
 ))]
@@ -49,6 +51,7 @@ use std::os::unix::ffi::OsStrExt;
         target_os = "linux",
         target_os = "macos",
         target_os = "tvos",
+        target_os = "visionos",
         target_os = "watchos",
     )
 ))]
@@ -65,6 +68,7 @@ use std::{io, slice};
     target_os = "ios",
     target_os = "macos",
     target_os = "tvos",
+    target_os = "visionos",
     target_os = "watchos",
 )))]
 use libc::ssize_t;
@@ -162,6 +166,7 @@ pub(crate) use libc::IP_TOS;
     target_os = "ios",
     target_os = "macos",
     target_os = "tvos",
+    target_os = "visionos",
     target_os = "watchos",
 )))]
 pub(crate) use libc::SO_LINGER;
@@ -169,6 +174,7 @@ pub(crate) use libc::SO_LINGER;
     target_os = "ios",
     target_os = "macos",
     target_os = "tvos",
+    target_os = "visionos",
     target_os = "watchos",
 ))]
 pub(crate) use libc::SO_LINGER_SEC as SO_LINGER;
@@ -208,6 +214,7 @@ pub(crate) use libc::{
     target_os = "openbsd",
     target_os = "solaris",
     target_os = "tvos",
+    target_os = "visionos",
     target_os = "watchos",
 )))]
 pub(crate) use libc::{IPV6_ADD_MEMBERSHIP, IPV6_DROP_MEMBERSHIP};
@@ -222,6 +229,7 @@ pub(crate) use libc::{IPV6_ADD_MEMBERSHIP, IPV6_DROP_MEMBERSHIP};
     target_os = "openbsd",
     target_os = "solaris",
     target_os = "tvos",
+    target_os = "visionos",
     target_os = "watchos",
 ))]
 pub(crate) use libc::{
@@ -240,6 +248,7 @@ pub(crate) use libc::{
         target_os = "macos",
         target_os = "netbsd",
         target_os = "tvos",
+        target_os = "visionos",
         target_os = "watchos",
     )
 ))]
@@ -253,6 +262,7 @@ pub(crate) type Bool = c_int;
     target_os = "macos",
     target_os = "nto",
     target_os = "tvos",
+    target_os = "visionos",
     target_os = "watchos",
 ))]
 use libc::TCP_KEEPALIVE as KEEPALIVE_TIME;
@@ -263,6 +273,7 @@ use libc::TCP_KEEPALIVE as KEEPALIVE_TIME;
     target_os = "nto",
     target_os = "openbsd",
     target_os = "tvos",
+    target_os = "visionos",
     target_os = "watchos",
     target_os = "vita",
 )))]
@@ -286,6 +297,7 @@ macro_rules! syscall {
     target_os = "ios",
     target_os = "macos",
     target_os = "tvos",
+    target_os = "visionos",
     target_os = "watchos",
 )))]
 const MAX_BUF_LEN: usize = ssize_t::MAX as usize;
@@ -302,6 +314,7 @@ const MAX_BUF_LEN: usize = ssize_t::MAX as usize;
     target_os = "ios",
     target_os = "macos",
     target_os = "tvos",
+    target_os = "visionos",
     target_os = "watchos",
 ))]
 const MAX_BUF_LEN: usize = c_int::MAX as usize - 1;
@@ -345,6 +358,7 @@ type IovLen = usize;
     target_os = "openbsd",
     target_os = "solaris",
     target_os = "tvos",
+    target_os = "visionos",
     target_os = "watchos",
     target_os = "espidf",
     target_os = "vita",
@@ -1238,6 +1252,7 @@ pub(crate) fn set_tcp_keepalive(fd: Socket, keepalive: &TcpKeepalive) -> io::Res
         target_os = "macos",
         target_os = "netbsd",
         target_os = "tvos",
+        target_os = "visionos",
         target_os = "watchos",
     ))]
     {
@@ -1464,6 +1479,7 @@ impl crate::Socket {
             target_os = "ios",
             target_os = "macos",
             target_os = "tvos",
+            target_os = "visionos",
             target_os = "watchos"
         ),
         allow(rustdoc::broken_intra_doc_links)
@@ -1500,6 +1516,7 @@ impl crate::Socket {
             target_os = "ios",
             target_os = "macos",
             target_os = "tvos",
+            target_os = "visionos",
             target_os = "watchos",
         )
     ))]
@@ -1511,6 +1528,7 @@ impl crate::Socket {
                 target_os = "ios",
                 target_os = "macos",
                 target_os = "tvos",
+                target_os = "visionos",
                 target_os = "watchos",
             )
         )))
@@ -1523,6 +1541,7 @@ impl crate::Socket {
         target_os = "ios",
         target_os = "macos",
         target_os = "tvos",
+        target_os = "visionos",
         target_os = "watchos",
     ))]
     pub(crate) fn _set_nosigpipe(&self, nosigpipe: bool) -> io::Result<()> {
@@ -1959,6 +1978,7 @@ impl crate::Socket {
             target_os = "ios",
             target_os = "macos",
             target_os = "tvos",
+            target_os = "visionos",
             target_os = "watchos",
         )
     ))]
@@ -1970,6 +1990,7 @@ impl crate::Socket {
                 target_os = "ios",
                 target_os = "macos",
                 target_os = "tvos",
+                target_os = "visionos",
                 target_os = "watchos",
             )
         )))
@@ -1995,6 +2016,7 @@ impl crate::Socket {
             target_os = "ios",
             target_os = "macos",
             target_os = "tvos",
+            target_os = "visionos",
             target_os = "watchos",
         )
     ))]
@@ -2006,6 +2028,7 @@ impl crate::Socket {
                 target_os = "ios",
                 target_os = "macos",
                 target_os = "tvos",
+                target_os = "visionos",
                 target_os = "watchos",
             )
         )))
@@ -2031,6 +2054,7 @@ impl crate::Socket {
             target_os = "ios",
             target_os = "macos",
             target_os = "tvos",
+            target_os = "visionos",
             target_os = "watchos",
         )
     ))]
@@ -2042,6 +2066,7 @@ impl crate::Socket {
                 target_os = "ios",
                 target_os = "macos",
                 target_os = "tvos",
+                target_os = "visionos",
                 target_os = "watchos",
             )
         )))
@@ -2062,6 +2087,7 @@ impl crate::Socket {
             target_os = "ios",
             target_os = "macos",
             target_os = "tvos",
+            target_os = "visionos",
             target_os = "watchos",
         )
     ))]
@@ -2073,6 +2099,7 @@ impl crate::Socket {
                 target_os = "ios",
                 target_os = "macos",
                 target_os = "tvos",
+                target_os = "visionos",
                 target_os = "watchos",
             )
         )))
@@ -2090,6 +2117,7 @@ impl crate::Socket {
             target_os = "ios",
             target_os = "macos",
             target_os = "tvos",
+            target_os = "visionos",
             target_os = "watchos",
         )
     ))]
@@ -2101,6 +2129,7 @@ impl crate::Socket {
                 target_os = "ios",
                 target_os = "macos",
                 target_os = "tvos",
+                target_os = "visionos",
                 target_os = "watchos",
             )
         )))
@@ -2121,6 +2150,7 @@ impl crate::Socket {
             target_os = "ios",
             target_os = "macos",
             target_os = "tvos",
+            target_os = "visionos",
             target_os = "watchos",
         )
     ))]
@@ -2132,6 +2162,7 @@ impl crate::Socket {
                 target_os = "ios",
                 target_os = "macos",
                 target_os = "tvos",
+                target_os = "visionos",
                 target_os = "watchos",
             )
         )))
@@ -2456,6 +2487,7 @@ impl crate::Socket {
             target_os = "linux",
             target_os = "macos",
             target_os = "tvos",
+            target_os = "visionos",
             target_os = "watchos",
         )
     ))]
@@ -2471,6 +2503,7 @@ impl crate::Socket {
                 target_os = "linux",
                 target_os = "macos",
                 target_os = "tvos",
+                target_os = "visionos",
                 target_os = "watchos",
             )
         )))
@@ -2493,6 +2526,7 @@ impl crate::Socket {
             target_os = "ios",
             target_os = "macos",
             target_os = "tvos",
+            target_os = "visionos",
             target_os = "watchos",
         )
     ))]

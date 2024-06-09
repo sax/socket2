@@ -519,6 +519,7 @@ impl TcpKeepalive {
         target_os = "macos",
         target_os = "netbsd",
         target_os = "tvos",
+        target_os = "visionos",
         target_os = "watchos",
         target_os = "windows",
     ))]
@@ -535,6 +536,7 @@ impl TcpKeepalive {
             target_os = "macos",
             target_os = "netbsd",
             target_os = "tvos",
+            target_os = "visionos",
             target_os = "watchos",
             target_os = "windows",
         )))
@@ -563,6 +565,7 @@ impl TcpKeepalive {
             target_os = "macos",
             target_os = "netbsd",
             target_os = "tvos",
+            target_os = "visionos",
             target_os = "watchos",
         )
     ))]
@@ -581,6 +584,7 @@ impl TcpKeepalive {
                 target_os = "macos",
                 target_os = "netbsd",
                 target_os = "tvos",
+                target_os = "visionos",
                 target_os = "watchos",
             )
         )))

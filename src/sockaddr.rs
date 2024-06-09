@@ -296,6 +296,7 @@ impl From<SocketAddrV4> for SockAddr {
             target_os = "nto",
             target_os = "openbsd",
             target_os = "tvos",
+            target_os = "visionos",
             target_os = "vxworks",
             target_os = "watchos",
         ))]
@@ -339,6 +340,7 @@ impl From<SocketAddrV6> for SockAddr {
             target_os = "nto",
             target_os = "openbsd",
             target_os = "tvos",
+            target_os = "visionos",
             target_os = "vxworks",
             target_os = "watchos",
         ))]
@@ -363,6 +365,7 @@ impl fmt::Debug for SockAddr {
             target_os = "nto",
             target_os = "openbsd",
             target_os = "tvos",
+            target_os = "visionos",
             target_os = "vxworks",
             target_os = "watchos",
         ))]

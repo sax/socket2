@@ -803,6 +803,7 @@ fn set_common_flags(socket: Socket) -> io::Result<Socket> {
         target_os = "ios",
         target_os = "macos",
         target_os = "tvos",
+        target_os = "visionos",
         target_os = "watchos",
     ))]
     socket._set_nosigpipe(true)?;
@@ -1982,6 +1983,7 @@ impl Socket {
             target_os = "macos",
             target_os = "netbsd",
             target_os = "tvos",
+            target_os = "visionos",
             target_os = "watchos",
         )
     ))]
@@ -2000,6 +2002,7 @@ impl Socket {
                 target_os = "macos",
                 target_os = "netbsd",
                 target_os = "tvos",
+                target_os = "visionos",
                 target_os = "watchos",
             )
         )))
@@ -2029,6 +2032,7 @@ impl Socket {
             target_os = "macos",
             target_os = "netbsd",
             target_os = "tvos",
+            target_os = "visionos",
             target_os = "watchos",
         )
     ))]
@@ -2047,6 +2051,7 @@ impl Socket {
                 target_os = "macos",
                 target_os = "netbsd",
                 target_os = "tvos",
+                target_os = "visionos",
                 target_os = "watchos",
             )
         )))

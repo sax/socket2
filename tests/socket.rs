@@ -8,6 +8,7 @@
         target_os = "linux",
         target_os = "macos",
         target_os = "tvos",
+        target_os = "visionos",
         target_os = "watchos",
     )
 ))]
@@ -32,6 +33,7 @@ use std::net::{Ipv6Addr, SocketAddrV6};
         target_os = "linux",
         target_os = "macos",
         target_os = "tvos",
+        target_os = "visionos",
         target_os = "watchos",
     )
 ))]
@@ -227,6 +229,7 @@ fn assert_common_flags(socket: &Socket, expected: bool) {
         target_os = "ios",
         target_os = "macos",
         target_os = "tvos",
+        target_os = "visionos",
         target_os = "watchos",
     ))]
     assert_flag_no_sigpipe(socket, expected);
@@ -418,6 +421,7 @@ where
         target_os = "ios",
         target_os = "macos",
         target_os = "tvos",
+        target_os = "visionos",
         target_os = "watchos",
     )
 ))]
@@ -438,6 +442,7 @@ fn set_nosigpipe() {
     target_os = "ios",
     target_os = "macos",
     target_os = "tvos",
+    target_os = "visionos",
     target_os = "watchos",
 ))]
 #[track_caller]
@@ -868,6 +873,7 @@ fn tcp_keepalive() {
             target_os = "macos",
             target_os = "netbsd",
             target_os = "tvos",
+            target_os = "visionos",
             target_os = "watchos",
             target_os = "windows",
         )
@@ -885,6 +891,7 @@ fn tcp_keepalive() {
             target_os = "macos",
             target_os = "netbsd",
             target_os = "tvos",
+            target_os = "visionos",
             target_os = "watchos",
         )
     ))]
@@ -912,6 +919,7 @@ fn tcp_keepalive() {
             target_os = "macos",
             target_os = "netbsd",
             target_os = "tvos",
+            target_os = "visionos",
             target_os = "watchos",
         )
     ))]
@@ -933,6 +941,7 @@ fn tcp_keepalive() {
             target_os = "macos",
             target_os = "netbsd",
             target_os = "tvos",
+            target_os = "visionos",
             target_os = "watchos",
         )
     ))]
@@ -979,6 +988,7 @@ fn device() {
         target_os = "ios",
         target_os = "macos",
         target_os = "tvos",
+        target_os = "visionos",
         target_os = "watchos",
     )
 ))]
@@ -1024,6 +1034,7 @@ fn device() {
         target_os = "ios",
         target_os = "macos",
         target_os = "tvos",
+        target_os = "visionos",
         target_os = "watchos",
     )
 ))]
@@ -1072,6 +1083,7 @@ fn device_v6() {
         target_os = "linux",
         target_os = "macos",
         target_os = "tvos",
+        target_os = "visionos",
         target_os = "watchos",
     )
 ))]
@@ -1228,6 +1240,7 @@ fn r#type() {
             target_os = "ios",
             target_os = "macos",
             target_os = "tvos",
+            target_os = "visionos",
             target_os = "watchos",
             target_os = "vita",
         )),
